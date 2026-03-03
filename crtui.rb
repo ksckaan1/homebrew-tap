@@ -5,20 +5,20 @@
 class Crtui < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_darwin_amd64.tar.gz"
-      sha256 "912391224a5b4be176d7c85ec9c495195d45c89461666814843ab98b7ea1b13e"
+      url "https://github.com/ksckaan1/crtui/releases/download/v0.1.0/crtui_0.1.0_darwin_amd64.tar.gz"
+      sha256 "21837560c6e4b27cfc7de8638232b8f70f320db799040a59879c8a920d20acf2"
 
       define_method(:install) do
         bin.install "crtui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_darwin_arm64.tar.gz"
-      sha256 "90c425663f8d3b2db12a2077a16088e487bfc983730f8a8eb926610fb2b6d13e"
+      url "https://github.com/ksckaan1/crtui/releases/download/v0.1.0/crtui_0.1.0_darwin_arm64.tar.gz"
+      sha256 "68522b125002af10def54c968d8eee2556e1cd547d9b2d75e10d0ec49988bcc6"
 
       define_method(:install) do
         bin.install "crtui"
@@ -28,15 +28,15 @@ class Crtui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_linux_amd64.tar.gz"
-      sha256 "e0927fbc491289ba3b8a2d1ed39c3afc0d9182f240d5b950a7e4a60285a151e0"
+      url "https://github.com/ksckaan1/crtui/releases/download/v0.1.0/crtui_0.1.0_linux_amd64.tar.gz"
+      sha256 "94affcae4437acfe27a2951a1648cd80033f781287d6dcbaebe0f5295178ccde"
       define_method(:install) do
         bin.install "crtui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_linux_arm64.tar.gz"
-      sha256 "cccde6c095ae632a6914d22ca4ab03443ae56290794765e22c0ccc94055d96f6"
+      url "https://github.com/ksckaan1/crtui/releases/download/v0.1.0/crtui_0.1.0_linux_arm64.tar.gz"
+      sha256 "9991ec1d832a2f2818edf643860a1cce6f28797937a06aa6870dee4c19bac4fc"
       define_method(:install) do
         bin.install "crtui"
       end
