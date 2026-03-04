@@ -10,7 +10,7 @@ class Crtui < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_darwin_amd64.tar.gz"
-      sha256 "1000779909ad608b15e80424662ffda24ac3b03d9c6ffdff3eb74bfe6d7e2a31"
+      sha256 "be3087fba71b6ce7e09f3791f7d00532ff29ccd34f295b3c12bba37983687552"
 
       define_method(:install) do
         bin.install "crtui"
@@ -18,7 +18,7 @@ class Crtui < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_darwin_arm64.tar.gz"
-      sha256 "cd313d760a1838e3a0e11d9d54e0f3b164aa1f3b4cafce6d1c72f42f6e9a79f7"
+      sha256 "e4637b120c7ea1668346d8ab071ffea9bc8ecb99ee870a3b449a832989995275"
 
       define_method(:install) do
         bin.install "crtui"
@@ -29,14 +29,14 @@ class Crtui < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_linux_amd64.tar.gz"
-      sha256 "2c6099f33d5fdbe0db836125f9945e6031ea90b7b4013e391201342056f50f8f"
+      sha256 "ab2c8cabf554d1a2e395146d59bf19b449f450c6bd3124cff0dd5901002257af"
       define_method(:install) do
         bin.install "crtui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ksckaan1/crtui/releases/download/v0.0.1/crtui_0.0.1_linux_arm64.tar.gz"
-      sha256 "570647867f3612550e8f2589862412f7de36dbe86d5ece4eace024bce3cddfe6"
+      sha256 "5c20169f37a2bc2ae76510571fcdda62e90143a9d7673360ea7637dd392deb5f"
       define_method(:install) do
         bin.install "crtui"
       end
